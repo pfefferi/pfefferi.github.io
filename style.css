@@ -1,43 +1,46 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 body {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: auto;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-
-    color: #555;
+    color: rgb(255, 177, 88);
 }
 main h1,
 h2,
 h3,
 h4,
 strong {
-    color: #333;
+    color: rgb(255, 122, 45);
+    opacity: 1;
 }
 
 .links {
-    background: #eee;
-    padding: 2px 2px;
+    padding: 2vw 2px;
+    text-align: left;
 }
 
 main a:visited {
     color: orangered;
 }
 
-header {
-    background-color: #263d36;
+.hero {
+    background-color: #2e253d;
     background-image: url('img/img.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.2;
     padding: 3em;
-    text-align: center;
+    height: 40vw;
 }
 
-header a {
+.hero2 {
+    text-align: center;
+}
+.top-link {
     border: 1px solid #8c1ce8;
     border-radius: 290486px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 0.6em;
     letter-spacing: 0.2em;
     padding: 1em 2em;
@@ -46,10 +49,11 @@ header a {
     transition: none 200ms ease-out;
     transition-property: color, background;
     background: #cb93ff;
-    opacity: 0.75;
+    opacity: 0.8;
+    width: 10vw;
 }
 
-header a:hover {
+.top-link:hover {
     border: 2px solid purple;
 
     background: orangered;
@@ -57,6 +61,15 @@ header a:hover {
     opacity: 1;
 }
 
-header h1 {
-    color: #eee;
+.content {
+    text-align: right;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.content2 {
+    margin: 0em;
+    padding: 0em;
 }
