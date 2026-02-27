@@ -3,113 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisandro Scarrone | Portfolio</title>
+    <title>Lisandro Scarrone — Bio-Digital Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Outfit:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-glow"></div>
+    <div class="noise"></div>
+    <div class="cursor"></div>
     
     <header>
-        <nav>
-            <div class="logo">LS<span>.</span></div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/pfefferi" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <div class="logo">LS<span>/</span>2026</div>
+            <nav>
+                <a href="#projects">Explorations</a>
+                <a href="#about">Philosophy</a>
+                <a href="https://github.com/pfefferi" class="social-link" target="_blank">Terminal</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h2 class="badge">Available for new challenges</h2>
-                <h1>Lisandro Scarrone</h1>
-                <p class="subtitle">Biology Student & Developer focused on <span>Agentic Systems</span> and <span>Scientific Visualization</span>.</p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="https://github.com/pfefferi" class="btn secondary">GitHub Profile</a>
+            <div class="hero-content">
+                <div class="reveal-container">
+                    <span class="eyebrow">Decoding Deep-Sea Habitats through Agentic Systems</span>
+                    <h1 class="hero-title">Lisandro<br><span class="italicized">Scarrone</span></h1>
+                </div>
+                <div class="hero-footer">
+                    <p class="hero-description">
+                        Bridging the threshold between <strong>Marine Biology</strong> and <strong>Autonomous Software Architecture</strong>. Currently specializing in high-fidelity scientific visualization and multi-agent coordination.
+                    </p>
+                    <div class="scroll-indicator">
+                        <div class="line"></div>
+                        <span>Scroll to Explore</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <div class="container">
-                <h3 class="section-title">Featured Projects</h3>
-                <div class="project-grid">
-                    <!-- VR Project -->
-                    <article class="project-card featured">
-                        <div class="project-content">
-                            <span class="tag">WebVR / Three.js</span>
-                            <h4>Vida en los Extremos</h4>
-                            <p>An interactive 3D visualizer and ROV simulator for deep-sea habitat exploration. Built with A-Frame, integrating real telemetry data from the FKt251206 mission.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/pfefferi/vidaenlosextremos-vr" class="link-icon">Code &rarr;</a>
-                            </div>
+            <div class="section-header">
+                <h2 class="section-title">Field Logs <span>(02)</span></h2>
+            </div>
+            
+            <div class="project-showcase">
+                <!-- Project 1: VR -->
+                <div class="case-study">
+                    <div class="case-number">01</div>
+                    <div class="case-info">
+                        <div class="case-tags">
+                            <span>WebVR</span>
+                            <span>Three.js</span>
+                            <span>Photogrammetry</span>
                         </div>
-                    </article>
+                        <h3 class="case-title">Vida en los Extremos</h3>
+                        <p class="case-description">
+                            A spatial immersion into the deep sea. This ROV simulator visualizes high-resolution benthic models from the FKt251206 mission, emulating real-world telemetry and control systems for scientific outreach.
+                        </p>
+                        <a href="https://github.com/pfefferi/vidaenlosextremos-vr" class="case-link" target="_blank">
+                            <span class="link-text">Examine Protocol</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="case-visual">
+                        <div class="visual-mask">
+                            <div class="visual-placeholder v-vr"></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Ecology Dashboard -->
-                    <article class="project-card featured">
-                        <div class="project-content">
-                            <span class="tag">Fullstack / Data Science</span>
-                            <h4>Ecology Analysis Dashboard</h4>
-                            <p>Unified analytical platform for biodiversity metrics. Features a FastAPI backend for processing taxonomic data and a React frontend for visualizing deep-sea benthic ecology indices.</p>
-                            <div class="project-links">
-                                <a href="#" class="link-icon">Details &rarr;</a>
-                            </div>
+                <!-- Project 2: Dashboard -->
+                <div class="case-study reversed">
+                    <div class="case-number">02</div>
+                    <div class="case-info">
+                        <div class="case-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Data Science</span>
                         </div>
-                    </article>
-
-                    <!-- Ecology API -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="tag">Python / FastAPI</span>
-                            <h4>Ecological Data API</h4>
-                            <p>RESTful API optimized for taxonomic analysis. Implements multi-layer validation, Redis caching, and automated diversity index calculations for large biological datasets.</p>
-                            <div class="project-links">
-                                <a href="#" class="link-icon">API Docs &rarr;</a>
-                            </div>
+                        <h3 class="case-title">Ecology Analysis Hub</h3>
+                        <p class="case-description">
+                            A unified analytical ecosystem for benthic ecology. This platform handles taxonomic index calculation, Redis-backed data caching, and visual exploration of biodiversity metrics for environmental assessment.
+                        </p>
+                        <a href="#" class="case-link">
+                            <span class="link-text">Access Interface</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="case-visual">
+                        <div class="visual-mask">
+                            <div class="visual-placeholder v-api"></div>
                         </div>
-                    </article>
-
-                    <!-- Jeringozo -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="tag">JavaScript</span>
-                            <h4>Traductor Jeringozo</h4>
-                            <p>A fun legacy web application that translates text into "Jeringozo". One of my first experiments with JavaScript DOM manipulation.</p>
-                            <div class="project-links">
-                                <a href="https://pfefferi.github.io/traductor-jeringozo-js/" class="link-icon">Live Demo &rarr;</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Memo Test -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="tag">Game Dev</span>
-                            <h4>Memotest Simuladores</h4>
-                            <p>Classic memory game themed after "Los Simuladores". Built using vanilla JavaScript and CSS grid.</p>
-                            <div class="project-links">
-                                <a href="https://pfefferi.github.io/memo-test/" class="link-icon">Live Demo &rarr;</a>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about">
-            <div class="container">
-                <div class="about-wrapper">
-                    <div class="about-text">
-                        <h3 class="section-title">About Me</h3>
-                        <p>I'm a Biology student at UBA with a deep passion for software engineering. I bridge the gap between scientific research and technology, specializing in 3D data visualization and autonomous AI systems.</p>
-                        <p>Currently exploring the frontiers of <strong>Agentic Coding</strong> and <strong>Marine Biology</strong>.</p>
+            <div class="about-grid">
+                <div class="about-title-box">
+                    <h2 class="about-heading">The<br>Intersection</h2>
+                </div>
+                <div class="about-content">
+                    <p class="about-para large">
+                        Biological systems are the ultimate software. My work treats code not just as a tool, but as a lens to observe and simulate the complexity of the natural world.
+                    </p>
+                    <p class="about-para">
+                        As a Biology student at UBA, I focus on the intersection of ecology and agentic computation. I build tools that allow researchers to navigate deep-sea data with the same fluidity that agents navigate complex codebases.
+                    </p>
+                    <div class="competencies">
+                        <div class="comp-col">
+                            <h6>Research</h6>
+                            <ul>
+                                <li>Deep-Sea Benthic Ecology</li>
+                                <li>Taxonomic Analysis</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div class="comp-col">
+                            <h6>Technology</h6>
+                            <ul>
+                                <li>Multi-Agent Systems</li>
+                                <li>A-Frame / WebGL</li>
+                                <li>Scalable API Design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,9 +137,29 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Lisandro Scarrone. Built with Antigravity.</p>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <span>Interested in collaborative research?</span>
+                    <a href="mailto:lisandro.sebsca@gmail.com">Initiate Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>LS © 2026 — Antigravity Protocol</span>
+                <div class="footer-links">
+                    <a href="https://github.com/pfefferi" target="_blank">Github</a>
+                    <a href="https://pfefferi.github.io/" target="_blank">Live Node</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
 </body>
 </html>
