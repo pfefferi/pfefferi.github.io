@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lisandro Scarrone</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header></header>
-        <main>
-            <div class="hero">
-                <div class="hero2">
-                    <h1>Placeholder de portfolio</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisandro Scarrone | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">LS<span>.</span></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/pfefferi" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2 class="badge">Available for new challenges</h2>
+                <h1>Lisandro Scarrone</h1>
+                <p class="subtitle">Biology Student & Developer focused on <span>Agentic Systems</span> and <span>Scientific Visualization</span>.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="https://github.com/pfefferi" class="btn secondary">GitHub Profile</a>
                 </div>
-                <div class="content">
-                    <div></div>
-                    <div class="content2">
-                        <div class="content3">
-                            <h4>En construcción</h4>
-                            <p>
-                                <strong>Lorem ipsum</strong> dolor sit amet,
-                                consectetur adipisicing elit. Labore, culpa ipsa
-                                quasi quo obcaecati recusandae mollitia
-                                doloremque facere magni natus asperiores at iste
-                                quos modi nemo quibusdam dolor illo ex animi
-                                velit. Modi molestiae, quasi assumenda eveniet
-                                <strong
-                                    >porro quidem perferendis voluptate
-                                    laboriosam quas veniam provident
-                                    accusantium</strong
-                                >
-                                nihil obcaecati quis.
-                            </p>
-                            <a
-                                class="top-link"
-                                href="https://github.com/pfefferi"
-                                target="_blank"
-                            >
-                                Lisandro Scarrone
-                            </a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h3 class="section-title">Featured Projects</h3>
+                <div class="project-grid">
+                    <!-- VR Project -->
+                    <article class="project-card featured">
+                        <div class="project-content">
+                            <span class="tag">WebVR / Three.js</span>
+                            <h4>Vida en los Extremos</h4>
+                            <p>An interactive 3D visualizer and ROV simulator for deep-sea habitat exploration. Built with A-Frame, integrating real telemetry data from the FKt251206 mission.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/pfefferi/vidaenlosextremos-vr" class="link-icon">Code &rarr;</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Ecology Dashboard -->
+                    <article class="project-card featured">
+                        <div class="project-content">
+                            <span class="tag">Fullstack / Data Science</span>
+                            <h4>Ecology Analysis Dashboard</h4>
+                            <p>Unified analytical platform for biodiversity metrics. Features a FastAPI backend for processing taxonomic data and a React frontend for visualizing deep-sea benthic ecology indices.</p>
+                            <div class="project-links">
+                                <a href="#" class="link-icon">Details &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ecology API -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="tag">Python / FastAPI</span>
+                            <h4>Ecological Data API</h4>
+                            <p>RESTful API optimized for taxonomic analysis. Implements multi-layer validation, Redis caching, and automated diversity index calculations for large biological datasets.</p>
+                            <div class="project-links">
+                                <a href="#" class="link-icon">API Docs &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Jeringozo -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="tag">JavaScript</span>
+                            <h4>Traductor Jeringozo</h4>
+                            <p>A fun legacy web application that translates text into "Jeringozo". One of my first experiments with JavaScript DOM manipulation.</p>
+                            <div class="project-links">
+                                <a href="https://pfefferi.github.io/traductor-jeringozo-js/" class="link-icon">Live Demo &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Memo Test -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="tag">Game Dev</span>
+                            <h4>Memotest Simuladores</h4>
+                            <p>Classic memory game themed after "Los Simuladores". Built using vanilla JavaScript and CSS grid.</p>
+                            <div class="project-links">
+                                <a href="https://pfefferi.github.io/memo-test/" class="link-icon">Live Demo &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="links">
-                    <div class="website">
-                        <span></span>
-                        <a
-                            href="https://pfefferi.github.io/traductor-jeringozo-js/"
-                            target="_blank"
-                            >Traductor Jeringozo</a
-                        >
-                    </div>
-                    <div class="website">
-                        <span></span>
-                        <a
-                            href="https://pfefferi.github.io/simon/"
-                            target="_blank"
-                            >Simon</a
-                        >
-                    </div>
-                    <div class="website">
-                        <span></span>
-                        <a
-                            href="https://pfefferi.github.io/memo-test/"
-                            target="_blank"
-                            >Memotest Simuladores</a
-                        >
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-text">
+                        <h3 class="section-title">About Me</h3>
+                        <p>I'm a Biology student at UBA with a deep passion for software engineering. I bridge the gap between scientific research and technology, specializing in 3D data visualization and autonomous AI systems.</p>
+                        <p>Currently exploring the frontiers of <strong>Agentic Coding</strong> and <strong>Marine Biology</strong>.</p>
                     </div>
                 </div>
             </div>
-        </main>
-    </body>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lisandro Scarrone. Built with Antigravity.</p>
+        </div>
+    </footer>
+</body>
 </html>
