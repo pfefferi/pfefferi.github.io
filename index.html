@@ -33,7 +33,7 @@
                 </div>
                 <div class="hero-footer">
                     <p class="hero-description">
-                        Bridging the threshold between <strong>Marine Biology</strong> and <strong>Autonomous Software Architecture</strong>. Currently specializing in high-fidelity scientific visualization and multi-agent coordination.
+                        Benthic Ecology researcher bridging the threshold between <strong>Marine Biology</strong> and <strong>Autonomous Software Architecture</strong>. Currently focused on chemosynthetic ecosystem modeling and multi-agent coordination.
                     </p>
                     <div class="scroll-indicator">
                         <div class="line"></div>
@@ -55,17 +55,22 @@
                     <div class="case-info">
                         <div class="case-tags">
                             <span>WebVR</span>
-                            <span>Three.js</span>
+                            <span>A-Frame</span>
                             <span>Photogrammetry</span>
                         </div>
                         <h3 class="case-title">Vida en los Extremos</h3>
                         <p class="case-description">
-                            A spatial immersion into the deep sea. This ROV simulator visualizes high-resolution benthic models from the FKt251206 mission, emulating real-world telemetry and control systems for scientific outreach.
+                            A spatial immersion into the Argentine deep-sea. Developed as part of the <strong>FKt251206</strong> campaign on the <strong>R/V Falkor (too)</strong>, this ROV simulator visualizes high-resolution benthic models from methane seeps in the Salado and Malvinas basins. 
                         </p>
-                        <a href="https://github.com/pfefferi/vidaenlosextremos-vr" class="case-link" target="_blank">
-                            <span class="link-text">Examine Protocol</span>
-                            <span class="link-arrow">→</span>
-                        </a>
+                        <div class="case-links-group">
+                            <a href="https://github.com/pfefferi/vidaenlosextremos-vr" class="case-link" target="_blank">
+                                <span class="link-text">Examine Code</span>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://schmidtocean.org/cruise/life-in-extremes-cold-seeps-of-argentina/" class="case-link secondary" target="_blank">
+                                <span class="link-text">SOI Cruise Page</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="case-visual">
                         <div class="visual-mask">
@@ -79,16 +84,16 @@
                     <div class="case-number">02</div>
                     <div class="case-info">
                         <div class="case-tags">
-                            <span>Python</span>
                             <span>FastAPI</span>
-                            <span>Data Science</span>
+                            <span>PostgreSQL</span>
+                            <span>Ecology</span>
                         </div>
                         <h3 class="case-title">Ecology Analysis Hub</h3>
                         <p class="case-description">
-                            A unified analytical ecosystem for benthic ecology. This platform handles taxonomic index calculation, Redis-backed data caching, and visual exploration of biodiversity metrics for environmental assessment.
+                            A specialized analytical ecosystem for biodiversity assessment. This platform processes taxonomic data to calculate diversity indices and characterize deep-sea communities, providing a regional baseline for environmental monitoring and climate change impact analysis.
                         </p>
-                        <a href="#" class="case-link">
-                            <span class="link-text">Access Interface</span>
+                        <a href="https://exactas.uba.ar/vidaenlosextremos/" class="case-link" target="_blank">
+                            <span class="link-text">Mission Context</span>
                             <span class="link-arrow">→</span>
                         </a>
                     </div>
@@ -111,23 +116,26 @@
                         Biological systems are the ultimate software. My work treats code not just as a tool, but as a lens to observe and simulate the complexity of the natural world.
                     </p>
                     <p class="about-para">
-                        As a Biology student at UBA, I focus on the intersection of ecology and agentic computation. I build tools that allow researchers to navigate deep-sea data with the same fluidity that agents navigate complex codebases.
+                        As a Biology student at UBA and researcher at the <strong>Benthic Ecology Team (Exactas-UBA / CONICET)</strong>, I specialize in the visual and computational study of cold seeps and chemosynthetic ecosystems. 
+                    </p>
+                    <p class="about-para">
+                        By integrating high-fidelity photogrammetry from **ROV SuBastian** with autonomous orchestration protocols, I aim to revolutionize how we interact with and protect the ocean's most extreme frontiers.
                     </p>
                     <div class="competencies">
                         <div class="comp-col">
-                            <h6>Research</h6>
+                            <h6>Expeditions</h6>
                             <ul>
+                                <li>FKt251206 — R/V Falkor (too)</li>
+                                <li>Mar Argentino — Cold Seeps</li>
                                 <li>Deep-Sea Benthic Ecology</li>
-                                <li>Taxonomic Analysis</li>
-                                <li>Data Visualization</li>
                             </ul>
                         </div>
                         <div class="comp-col">
-                            <h6>Technology</h6>
+                            <h6>Frameworks</h6>
                             <ul>
-                                <li>Multi-Agent Systems</li>
-                                <li>A-Frame / WebGL</li>
-                                <li>Scalable API Design</li>
+                                <li>Agentic Orchestration</li>
+                                <li>3D Data Reconstruction</li>
+                                <li>Spatial Informatics</li>
                             </ul>
                         </div>
                     </div>
@@ -145,7 +153,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>LS © 2026 — Antigravity Protocol</span>
+                <span>LS © 2026 — Mar Argentino Exploration</span>
                 <div class="footer-links">
                     <a href="https://github.com/pfefferi" target="_blank">Github</a>
                     <a href="https://pfefferi.github.io/" target="_blank">Live Node</a>
@@ -157,8 +165,10 @@
     <script>
         document.addEventListener('mousemove', (e) => {
             const cursor = document.querySelector('.cursor');
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
         });
     </script>
 </body>

@@ -215,12 +215,29 @@ nav a:hover { opacity: 1; }
     font-weight: 300;
 }
 
+.case-links-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
 .case-link {
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
     color: var(--accent);
+}
+
+.case-link.secondary {
+    color: var(--muted);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.case-link.secondary:hover {
+    color: var(--fg);
+    border-color: var(--accent);
 }
 
 .link-text { text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; font-weight: 600; }
